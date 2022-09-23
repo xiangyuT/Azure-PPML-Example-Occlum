@@ -9,7 +9,7 @@ ${SPARK_HOME}/bin/spark-submit \
     --executor-cores 4 \
     --conf spark.executor.instances=3 \
     --conf spark.rpc.netty.dispatcher.numThreads=128 \
-    --conf spark.kubernetes.container.image=xiangyut/bigdl-ppml-azure-occlum:0.13 \
+    --conf spark.kubernetes.container.image=xiangyut/bigdl-ppml-azure-occlum:0.13  \
     --conf spark.kubernetes.authenticate.driver.serviceAccountName=spark \
     --conf spark.kubernetes.executor.deleteOnTermination=false \
     --conf spark.kubernetes.driver.podTemplateFile=../driver.yaml \
